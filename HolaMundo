@@ -16,7 +16,7 @@ void main()
 
 	cout<<"Hola Mundo"<<endl;
 
-	cout<<"Fabiana Serrate";
+	cout<<"Daniel Yabeta";
 
 	getch();
 

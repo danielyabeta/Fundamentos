@@ -1,0 +1,24 @@
+// factorial con for.cpp
+
+#include"Stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+void main()
+{
+int i=1,n,fact;
+cout<< "introduce el valor de n: ";
+cin>>n;
+ fact=1;
+    while(i <=n)
+	{
+    fact=fact*i;
+	     i=i+1;
+	}
+	cout<< "el factorial es";
+	cout<<fact;
+	getch ();
+	
+
+}

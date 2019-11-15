@@ -1,24 +1,28 @@
-// factorial con for.cpp
+// areacuadrado.cpp : Defines the entry point for the console application.
+//
 
-#include"Stdafx.h"
+
+#include "stdafx.h"
 #include <iostream>
 #include "conio.h"
+
 using namespace std;
+
+float calculodelarea (float l);
 
 void main()
 {
-int i=1,n,fact;
-cout<< "introduce el valor de n: ";
-cin>>n;
- fact=1;
-    while(i <=n)
-	{
-    fact=fact*i;
-	     i=i+1;
-	}
-	cout<< "el factorial es";
-	cout<<fact;
-	getch ();
-	
+	float area,l;
+	cout<<"ingrese lado: "<<endl;
+	cin>>l;
+	area=calculodelarea(l);
+	cout<<"area"<<area<<endl;
+	getch();
+}
 
+float calculodelarea (float l)
+{
+	float area;
+	  area=l*l;
+	  return area;
 }

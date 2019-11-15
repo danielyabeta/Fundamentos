@@ -1,0 +1,26 @@
+// areacuadrado2.cpp : Defines the entry point for the console application.
+//
+// areacuadrado.cpp : main project file.
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+float calculodelarea (float l);
+
+void main()
+{
+	float area,l;
+	cout<<"ingrese lado: "<<endl;
+	cin>>l;
+	area=calculodelarea(l);
+}
+
+float calculodelarea (float l)
+{
+	float area;
+	  area=l*l;
+	  return area;
+}

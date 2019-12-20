@@ -1,0 +1,31 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+   string s, line;
+   getline( cin, line );
+   while( cin ) {
+      cin >> s;
+      int l=0, i=0, c=0, j=0, k=s.length();
+
+.
+while( j<s.length() ) {
+   string cad = s.substr(j,s.length());
+   for( l=cad.length(); l>0; l-- ) {
+      string subcad=cad.substr(0,l);
+      for( i=0; i<subcad.length()/2; i++ )
+         if( subcad.at(i)!=subcad.at(subcad.length()-1-i))
+            break;
+      if( i<subcad.length()/2 ) {
+         continue;
+      } else {
+         c++;
+         j += l;
+         break;
+      }
+   }
+}
+Cout << c << endl;
+   }
+   return 0;
+}
